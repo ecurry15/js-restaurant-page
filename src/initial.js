@@ -1,3 +1,4 @@
+export function initial() {
 const content = document.getElementById('content');
 //Top Nav ----
 const topNav = document.createElement('div');
@@ -33,8 +34,10 @@ topNav.appendChild(mainNav);
 //Elements ---
 const menu = document.createElement('li');
 menu.textContent = "Menu";
+menu.id = "menu";
 const stories = document.createElement('li');
 stories.textContent = "Stories";
+stories.id = "stories";
 const about = document.createElement('li');
 about.textContent = "About";
 const careers = document.createElement('li');
@@ -176,3 +179,4 @@ const shakeImg = document.createElement('img');
 shakeImg.src = "https://cf-images.us-east-1.prod.boltdns.net/v1/static/1918791242001/6f42cbab-9dd5-453b-ac27-8f11658e157a/7f0d0e79-6c2a-4371-ad98-10b9e5b72801/1280x720/match/image.jpg";
 shakeImg.className = "shake";
 rightSideContent.appendChild(shakeImg);
+};

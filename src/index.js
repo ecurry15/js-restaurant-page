@@ -97,7 +97,7 @@ const joinTextWrap = document.createElement('div');
 joinTextWrap.className = "joinTextWrap";
 bannerTextWrap.appendChild(joinTextWrap);
 const join = document.createElement('h1');
-join.textContent = "Join Chick-Fil-A One"
+join.textContent = "Join Chick-fil-A One"
 joinTextWrap.appendChild(join);
  const reserved = document.createElement('i');
  reserved.className = "fa-regular fa-registered";
@@ -117,3 +117,62 @@ joinToday.appendChild(joinTodayText);
 const joinArrow = document.createElement('i');
 joinArrow.className = "fa-solid fa-angle-right";
 joinTodayText.appendChild(joinArrow);
+
+
+const orderContainer = document.createElement('div');
+orderContainer.className = "orderContainer";
+mainContentContainer.appendChild(orderContainer);
+
+//LeftSide content --
+const leftSideContent = document.createElement('div');
+leftSideContent.className = "leftSideContent";
+orderContainer.appendChild(leftSideContent);
+const peach = document.createElement('h1');
+peach.textContent = "Peach";
+const milkShake = document.createElement('h1');
+milkShake.textContent = "Milkshake";
+const season = document.createElement('h1');
+season.textContent = "season is here";
+leftSideContent.appendChild(peach);
+leftSideContent.appendChild(milkShake);
+leftSideContent.appendChild(season);
+
+const coolOff = document.createElement('p');
+coolOff.textContent = "cool off with this creamy classic";
+leftSideContent.appendChild(coolOff);
+
+//Order buttons ---
+const orderButtonsWrap = document.createElement('div');
+orderButtonsWrap.className = "orderButtonsWrap";
+leftSideContent.appendChild(orderButtonsWrap);
+
+//1st button
+const orderPickUp = document.createElement('div');
+orderButtonsWrap.appendChild(orderPickUp);
+//Icon
+const orderIcon = document.createElement('i');
+orderIcon.className = "fa-solid fa-utensils";
+orderPickUp.appendChild(orderIcon);
+//Text
+const orderText = document.createElement('p');
+orderText.textContent = "Order Pickup";
+orderPickUp.appendChild(orderText);
+//2nd button
+const orderDelivery = document.createElement('div');
+orderButtonsWrap.appendChild(orderDelivery);
+//Icon
+const deliveryIcon = document.createElement('i');
+deliveryIcon.className = "fa-solid fa-car-side";
+orderDelivery.appendChild(deliveryIcon);
+//Text
+const deliveryText = document.createElement('p');
+deliveryText.textContent = "Order Delivery";
+orderDelivery.appendChild(deliveryText);
+
+//RightSide---- 
+const rightSideContent = document.createElement('div');
+orderContainer.appendChild(rightSideContent);
+const shakeImg = document.createElement('img');
+shakeImg.src = "https://cf-images.us-east-1.prod.boltdns.net/v1/static/1918791242001/6f42cbab-9dd5-453b-ac27-8f11658e157a/7f0d0e79-6c2a-4371-ad98-10b9e5b72801/1280x720/match/image.jpg";
+shakeImg.className = "shake";
+rightSideContent.appendChild(shakeImg);

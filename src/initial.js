@@ -66,7 +66,7 @@ signInWrapper.appendChild(span2);
 
 //Order --
 const orderFood = document.createElement('button');
-orderFood.textContent = "Order Food";
+orderFood.textContent = "Order food";
 topNav.appendChild(orderFood);
 //Search --
 const searchIcon = document.createElement('i');

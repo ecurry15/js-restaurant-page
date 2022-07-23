@@ -240,12 +240,19 @@ menuDropDown.appendChild(catering);
 
 let menuDropOpen = false;
 
-document.addEventListener("mouseover", function(e) {
-  console.log(e.target);
-  if (e.target.id == "menu") {
-    menuDropDown.style.display = "flex";
-  } else if (e.target.className != "topNav" || e.target.className != "menuDropDown" || e.target.className != "bannerWrapper") {
-    menuDropDown.style.display = "none";
+menu.addEventListener('mouseover', function() {
+  menuDropDown.style.display = "flex";
+  menuDropOpen = true;
+})
+
+document.addEventListener('mouseover', e => {
+  if (e.target.id == "menu" || e.target.className == "menuDropDown" || e.target.closest('.menuDropDown') || e.target.className == "bannerWrapper" || e.target.className == "topNav") {
+    return
+  } else {
+    if (menuDropOpen) {
+      menuDropDown.style.display = "none";
+      menuDropOpen = false;
+    }
   }
 })
 

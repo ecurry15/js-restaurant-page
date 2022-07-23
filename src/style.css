@@ -275,7 +275,7 @@ transform: translateX(50%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 15px;
-    width: 78%;
+    width: 475px;
   }
   
   .orderButtonsWrap > div {
@@ -306,6 +306,7 @@ transform: translateX(50%);
     transform: translateX(400px);
     -webkit-transition-duration: 800ms;
     transition-duration: 800ms;
+    z-index: -1;
   }
 
 /* Menu DropDown Nav --- */

@@ -152,7 +152,7 @@ leftSideContent.appendChild(milkShake);
 leftSideContent.appendChild(season);
 
 const coolOff = document.createElement('p');
-coolOff.textContent = "cool off with this creamy classic";
+coolOff.textContent = "Cool off with this creamy classic";
 leftSideContent.appendChild(coolOff);
 
 //Order buttons ---
@@ -190,4 +190,12 @@ const shakeImg = document.createElement('img');
 shakeImg.src = "https://cf-images.us-east-1.prod.boltdns.net/v1/static/1918791242001/6f42cbab-9dd5-453b-ac27-8f11658e157a/7f0d0e79-6c2a-4371-ad98-10b9e5b72801/1280x720/match/image.jpg";
 shakeImg.className = "shake";
 rightSideContent.appendChild(shakeImg);
+
+window.addEventListener('load', (event) => {
+  shakeImg.style.transform = "translateX(0px)";
+});
+
+
+
 };
+

@@ -307,6 +307,46 @@ transform: translateX(50%);
     -webkit-transition-duration: 800ms;
     transition-duration: 800ms;
   }
+
+/* Menu DropDown Nav --- */
+
+.menuDropDown {
+  position: absolute;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  list-style: none;
+  background-color: #fff;
+  width: 100%;
+  top:64px;
+  height: 55px;
+  box-shadow: 0px .5px 5px rgb(199, 199, 199);
+  gap: 38px;
+  transition: var(--transition);
 }
 
 
+
+
+.menuDropDown > li {
+  color: var(--main-red);
+  cursor: pointer;
+  font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: var(--transition);
+}
+
+.menuDropDown > li:hover, .menuDropDown > li:focus-visible {
+  text-decoration: underline;
+    color: #c20726;
+}
+
+.menuDropDown > li:last-child {
+  border-left: 1px solid rgb(214, 214, 214);
+  padding-left: 30px;
+}
+
+}

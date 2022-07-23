@@ -35,6 +35,7 @@ topNav.appendChild(mainNav);
 const menu = document.createElement('li');
 menu.textContent = "Menu";
 menu.id = "menu";
+
 const stories = document.createElement('li');
 stories.textContent = "Stories";
 stories.id = "stories";
@@ -191,11 +192,62 @@ shakeImg.src = "https://cf-images.us-east-1.prod.boltdns.net/v1/static/191879124
 shakeImg.className = "shake";
 rightSideContent.appendChild(shakeImg);
 
+//Shake animation -----
 window.addEventListener('load', (event) => {
   shakeImg.style.transform = "translateX(0px)";
 });
 
+//Menu drop down menu nav -----
+const menuDropDown = document.createElement('nav');
+menuDropDown.className = "menuDropDown";
+content.appendChild(menuDropDown);
+//Menu Items ---
+const breakFast = document.createElement('li');
+breakFast.textContent = "Breakfast";
+menuDropDown.appendChild(breakFast);
 
+const entrees = document.createElement('li');
+entrees.textContent = "Entrées";
+menuDropDown.appendChild(entrees);
+
+const salads = document.createElement('li');
+salads.textContent = "Salads";
+menuDropDown.appendChild(salads);
+
+const sides = document.createElement('li');
+sides.textContent = "Sides";
+menuDropDown.appendChild(sides);
+
+const kids = document.createElement('li');
+kids.textContent = "Kid's Meals";
+menuDropDown.appendChild(kids);
+
+const treats = document.createElement('li');
+treats.textContent = "Treats";
+menuDropDown.appendChild(treats);
+
+const drinks = document.createElement('li');
+drinks.textContent = "Drinks";
+menuDropDown.appendChild(drinks);
+
+const sauce = document.createElement('li');
+sauce.textContent = "Dipping Sauces and Dressings";
+menuDropDown.appendChild(sauce);
+
+const catering = document.createElement('li');
+catering.textContent = "Catering";
+menuDropDown.appendChild(catering);
+
+let menuDropOpen = false;
+
+document.addEventListener("mouseover", function(e) {
+  console.log(e.target);
+  if (e.target.id == "menu") {
+    menuDropDown.style.display = "flex";
+  } else if (e.target.className != "topNav" || e.target.className != "menuDropDown" || e.target.className != "bannerWrapper") {
+    menuDropDown.style.display = "none";
+  }
+})
 
 };
 

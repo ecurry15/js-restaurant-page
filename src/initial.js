@@ -5,6 +5,12 @@ const topNav = document.createElement('div');
 topNav.className = "topNav";
 content.appendChild(topNav);
 
+//Nav HamBurger Icon --- Smaller Screens ---//
+const hamburgerIcon = document.createElement('i');
+hamburgerIcon.className = "fa-solid fa-bars";
+topNav.appendChild(hamburgerIcon);
+//----------//
+
 //Logo ----
 const logoImg = document.createElement('img');
 logoImg.className = "logoImg";
@@ -73,6 +79,14 @@ topNav.appendChild(orderFood);
 const searchIcon = document.createElement('i');
 searchIcon.className = 'fa-solid fa-magnifying-glass';
 topNav.appendChild(searchIcon);
+
+//Order Now --- Smaller Screen -- //
+const orderNow = document.createElement('p');
+orderNow.className = "orderNow";
+let newline = "\r\n";
+orderNow.textContent = `Order ${newline} Now`;
+topNav.appendChild(orderNow);
+
 //Top Nav End----
 
 //Main Content ---
@@ -152,6 +166,11 @@ leftSideContent.appendChild(peach);
 leftSideContent.appendChild(milkShake);
 leftSideContent.appendChild(season);
 
+const inLineShakeText = document.createElement('h4');
+inLineShakeText.className = "inLineShakeText";
+inLineShakeText.textContent = "Peach Milkshake season is here";
+leftSideContent.appendChild(inLineShakeText);
+
 const coolOff = document.createElement('p');
 coolOff.textContent = "Cool off with this creamy classic";
 leftSideContent.appendChild(coolOff);
@@ -192,10 +211,25 @@ shakeImg.src = "https://cf-images.us-east-1.prod.boltdns.net/v1/static/191879124
 shakeImg.className = "shake";
 rightSideContent.appendChild(shakeImg);
 
+
 //Shake animation -----
+const mediaQuery = window.matchMedia('(min-width: 980px)');
+const mobileMediaQuery = window.matchMedia('(max-width: 979px)');
+
 window.addEventListener('load', (event) => {
-  shakeImg.style.transform = "translateX(0px)";
+  if (mediaQuery.matches) {
+    shakeImg.style.transform = "translateX(0px)";
+  }
 });
+
+window.addEventListener('mousemove', function() {
+  if (mobileMediaQuery.matches) {
+    shakeImg.style.transform = "translateX(-50%)";
+  } else {
+    shakeImg.style.transform = "translateX(0px)";
+  }
+})
+
 
 //Menu drop down menu nav -----
 const menuDropDown = document.createElement('nav');

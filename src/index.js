@@ -2,7 +2,6 @@ import {initial} from './initial';
 import {menu} from './menu';
 import {stories} from './stories';
 
-console.log('works');
 initial();
 
 const tabSwitch = (function() {

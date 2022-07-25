@@ -138,12 +138,10 @@ joinTodayText.appendChild(joinArrow);
 
 
 joinTodayText.addEventListener('mouseover', function() {
-  console.log('w');
   joinArrow.style.right = "-2px";
 })
 
 joinTodayText.addEventListener('mouseout', function() {
-  console.log('w');
   joinArrow.style.right = "0px";
 })
 

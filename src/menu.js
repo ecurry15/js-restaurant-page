@@ -175,4 +175,38 @@ const registered = document.createElement('i');
 const availability = document.createElement('p');
 menuBanner.appendChild(availability);
 availability.textContent = "Availability may differ at different locations."
+//Menu Banner End ------
+
+const menuPageContent = document.createElement('section');
+contentDiv.appendChild(menuPageContent);
+menuPageContent.className = "menuPageContentWrap";
+//ROW One ---------
+const rowOne = document.createElement('div');
+menuPageContent.appendChild(rowOne);
+rowOne.className = "rowOne";
+
+//1st img ---
+const leftSideOne = document.createElement('div');
+rowOne.appendChild(leftSideOne);
+
+const imgContainerOne = document.createElement('div');
+imgContainerOne.className = "imgContainer";
+leftSideOne.appendChild(imgContainerOne);
+const leftSideOneImg = document.createElement('img');
+leftSideOneImg.src = "https://www.cfacdn.com/img/order/menu/Online/Entrees/Jul19_CFASandwich_pdp.png";
+imgContainerOne.appendChild(leftSideOneImg);
+
+const leftSideOneTitle = document.createElement('h1');
+leftSideOneTitle.textContent = "Chick-fil-A Chicken Sandwich";
+leftSideOne.appendChild(leftSideOneTitle);
+
+const leftSideOneNutrition = document.createElement('p');
+leftSideOneNutrition.textContent =  "440 Cal per Sandwich";
+leftSideOne.appendChild(leftSideOneNutrition);
+
+const leftSideOneButton = document.createElement('button');
+leftSideOneButton.textContent = "Order now";
+leftSideOne.appendChild(leftSideOneButton);
+
+//ROW One --------- End ----
 }

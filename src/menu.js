@@ -150,6 +150,53 @@ document.addEventListener('mouseover', e => {
 
 //Top Nav End----
 
+//Mobile only menu banner -----
+const getStartedBanner = document.createElement('div');
+getStartedBanner.className = "getStartedBanner";
+contentDiv.appendChild(getStartedBanner);
+
+const getStartedText = document.createElement('h1');
+getStartedText.textContent = "What kind of order can we get started for you?";
+getStartedBanner.appendChild(getStartedText);
+
+const pickupDeliveryCateringWrap = document.createElement('div');
+pickupDeliveryCateringWrap.className = "pickupDeliveryCateringWrap";
+getStartedBanner.appendChild(pickupDeliveryCateringWrap);
+
+const menuPickWrap = document.createElement('div');
+pickupDeliveryCateringWrap.appendChild(menuPickWrap);
+
+const menuPickIcon = document.createElement('i');
+menuPickIcon.className = "fa-solid fa-store";
+menuPickWrap.appendChild(menuPickIcon);
+
+const menuPickText = document.createElement('p');
+menuPickText.textContent = "Order\n Pickup";
+menuPickWrap.appendChild(menuPickText);
+
+const menuDeliveryWrap = document.createElement('div');
+pickupDeliveryCateringWrap.appendChild(menuDeliveryWrap);
+
+const menuDeliveryIcon = document.createElement('i');
+menuDeliveryIcon.className = "fa-solid fa-car";
+menuDeliveryWrap.appendChild(menuDeliveryIcon);
+
+const menuDeliveryText = document.createElement('p');
+menuDeliveryText.textContent = "Order \n Delivery";
+menuDeliveryWrap.appendChild(menuDeliveryText);
+
+const menuCateringWrap = document.createElement('div');
+pickupDeliveryCateringWrap.appendChild(menuCateringWrap);
+
+const menuCateringIcon = document.createElement('i');
+menuCateringIcon.className = "fa-solid fa-bell-concierge";
+menuCateringWrap.appendChild(menuCateringIcon);
+
+const menuCateringText = document.createElement('p');
+menuCateringText.textContent = "Order \n Catering";
+menuCateringWrap.appendChild(menuCateringText);
+//Mobile only menu banner End---------
+
 //Menu Title ---- //
 const menuBanner = document.createElement('div');
 contentDiv.appendChild(menuBanner);
@@ -176,6 +223,26 @@ const availability = document.createElement('p');
 menuBanner.appendChild(availability);
 availability.textContent = "Availability may differ at different locations."
 //Menu Banner End ------
+
+//Mobile only Entree bar ---
+const entreeBar = document.createElement('div');
+entreeBar.className = "entreeBar";
+contentDiv.appendChild(entreeBar);
+
+const entreeBarImg = document.createElement('img');
+entreeBarImg.className = "entreeBarImg";
+entreeBarImg.src = "https://www.cfacdn.com/img/order/menu/Online/Entrees/Jul19_CFASandwich_pdp.png";
+entreeBar.appendChild(entreeBarImg);
+
+const entreeBarTitle = document.createElement('p');
+entreeBarTitle.textContent = "Entrées";
+entreeBar.appendChild(entreeBarTitle);
+
+const entreeBarArrow = document.createElement('i');
+entreeBarArrow.className = "fa-solid fa-chevron-up";
+entreeBar.appendChild(entreeBarArrow);
+
+
 
 const menuPageContent = document.createElement('section');
 contentDiv.appendChild(menuPageContent);
@@ -337,4 +404,5 @@ const rightTwoButton = document.createElement('button');
 rightTwoButton.textContent = "Order now";
 rightTwo.appendChild(rightTwoButton);
 
+//Small Screen Banner -------/
 }

@@ -180,6 +180,7 @@ availability.textContent = "Availability may differ at different locations."
 const menuPageContent = document.createElement('section');
 contentDiv.appendChild(menuPageContent);
 menuPageContent.className = "menuPageContentWrap";
+
 //ROW One ---------
 const rowOne = document.createElement('div');
 menuPageContent.appendChild(rowOne);
@@ -208,5 +209,132 @@ const leftSideOneButton = document.createElement('button');
 leftSideOneButton.textContent = "Order now";
 leftSideOne.appendChild(leftSideOneButton);
 
+//middle -------- ---
+const middleOne = document.createElement('div');
+rowOne.appendChild(middleOne);
+
+const imgContainerMiddleOne = document.createElement('div');
+imgContainerMiddleOne.className = "imgContainer";
+middleOne.appendChild(imgContainerMiddleOne);
+
+const middleOneImg = document.createElement('img');
+middleOneImg.src = "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Entree/Entree%20PDP/_0000s_0004_NEWStack6200001CFAPDPDeluxeSandwich1085png.png";
+imgContainerMiddleOne.appendChild(middleOneImg);
+
+const middleOneTitle = document.createElement('h1');
+middleOneTitle.textContent = "Chick-fil-A Deluxe Sandwich";
+middleOne.appendChild(middleOneTitle);
+
+const middleOneNutrition = document.createElement('p');
+middleOneNutrition.textContent =  "500 Cal per Sandwich";
+middleOne.appendChild(middleOneNutrition);
+
+const middleOneButton = document.createElement('button');
+middleOneButton.textContent = "Order now";
+middleOne.appendChild(middleOneButton);
+
+// Right ----------
+const rightOne = document.createElement('div');
+rowOne.appendChild(rightOne);
+
+const imgContainerRightOne = document.createElement('div');
+imgContainerRightOne.className = "imgContainer";
+rightOne.appendChild(imgContainerRightOne);
+
+const rightOneImg = document.createElement('img');
+rightOneImg.src = "https://www.cfacdn.com/img/order/menu/Online/Entrees/CFASpicySandwich_1080.png";
+imgContainerRightOne.appendChild(rightOneImg);
+
+const rightOneTitle = document.createElement('h1');
+rightOneTitle.textContent = "Spicy Chicken Sandwich";
+rightOne.appendChild(rightOneTitle);
+
+const rightOneNutrition = document.createElement('p');
+rightOneNutrition.textContent =  "460 Cal per Sandwich";
+rightOne.appendChild(rightOneNutrition);
+
+const rightOneButton = document.createElement('button');
+rightOneButton.textContent = "Order now";
+rightOne.appendChild(rightOneButton);
+
 //ROW One --------- End ----
+
+//Row Two  --------------
+const rowTwo = document.createElement('div');
+menuPageContent.appendChild(rowTwo);
+rowTwo.className = "rowOne";
+
+//1st img ---
+const leftSideTwo = document.createElement('div');
+rowTwo.appendChild(leftSideTwo);
+
+const imgContainerTwo = document.createElement('div');
+imgContainerTwo.className = "imgContainer";
+leftSideTwo.appendChild(imgContainerTwo);
+const leftSideTwoImg = document.createElement('img');
+leftSideTwoImg.src = "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Entree/Entree%20Desktop/_0003s_0012_%5BFeed%5D_0001s_0023_Entrees_Spicy-Deluxe-Sandwich.png";
+imgContainerTwo.appendChild(leftSideTwoImg);
+
+const leftSideTwoTitle = document.createElement('h1');
+leftSideTwoTitle.textContent = "Spicy Deluxe Sandwich";
+leftSideTwo.appendChild(leftSideTwoTitle);
+
+const leftSideTwoNutrition = document.createElement('p');
+leftSideTwoNutrition.textContent =  "550 Cal per Sandwich";
+leftSideTwo.appendChild(leftSideTwoNutrition);
+
+const leftSideTwoButton = document.createElement('button');
+leftSideTwoButton.textContent = "Order now";
+leftSideTwo.appendChild(leftSideTwoButton);
+//------
+
+//middle -------- ---
+const middleTwo = document.createElement('div');
+rowTwo.appendChild(middleTwo);
+
+const imgContainerMiddleTwo = document.createElement('div');
+imgContainerMiddleTwo.className = "imgContainer";
+middleTwo.appendChild(imgContainerMiddleTwo);
+
+const middleTwoImg = document.createElement('img');
+middleTwoImg.src = "https://www.cfacdn.com/img/order/COM/Menu_Refresh/Entree/Entree%20PDP/_0000s_0009_Final__0026_CFA_PDP_Grilled-Deluxe-Sandwich_1085.png";
+imgContainerMiddleTwo.appendChild(middleTwoImg);
+
+const middleTwoTitle = document.createElement('h1');
+middleTwoTitle.textContent = "Grilled Chicken Sandwich";
+middleTwo.appendChild(middleTwoTitle);
+
+const middleTwoNutrition = document.createElement('p');
+middleTwoNutrition.textContent =  "380 Cal per Sandwich";
+middleTwo.appendChild(middleTwoNutrition);
+
+const middleTwoButton = document.createElement('button');
+middleTwoButton.textContent = "Order now";
+middleTwo.appendChild(middleTwoButton);
+//----- middle end -----
+
+// Right ----------
+const rightTwo = document.createElement('div');
+rowTwo.appendChild(rightTwo);
+
+const imgContainerRightTwo = document.createElement('div');
+imgContainerRightTwo.className = "imgContainer";
+rightTwo.appendChild(imgContainerRightTwo);
+
+const rightTwoImg = document.createElement('img');
+rightTwoImg.src = "https://www.cfacdn.com/img/order/menu/Online/Entrees/grilledClub_colbyJack_PDP.png";
+imgContainerRightTwo.appendChild(rightTwoImg);
+
+const rightTwoTitle = document.createElement('h1');
+rightTwoTitle.textContent = "Chic-fil-A Grilled Chicken Club Sandwich";
+rightTwo.appendChild(rightTwoTitle);
+
+const rightTwoNutrition = document.createElement('p');
+rightTwoNutrition.textContent =  "520 Cal per Sandwich";
+rightTwo.appendChild(rightTwoNutrition);
+
+const rightTwoButton = document.createElement('button');
+rightTwoButton.textContent = "Order now";
+rightTwo.appendChild(rightTwoButton);
+
 }

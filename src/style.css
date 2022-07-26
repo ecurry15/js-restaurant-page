@@ -337,7 +337,7 @@ transform: translateX(50%);
 /* Menu DropDown Nav --- */
 
 .menuDropDown {
-  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: row;
   justify-content: center;
@@ -432,11 +432,21 @@ width: 98%;
   align-items: center;
 }
 
+.rowOne > div:hover .imgContainer {
+  opacity: 1;
+}
+
+.rowOne > div:hover h1 {
+  color: var(--main-red);
+  text-decoration: underline;
+}
+
 .imgContainer {
   object-fit: fill;
   width: 86%;
   opacity: .87;
 }
+
 
 .imgContainer > img {
   max-width: 100%;
@@ -451,6 +461,7 @@ width: 98%;
   font-size: 24px;
   text-align: center;
   cursor: pointer;
+  transition: .7s;
 }
 
 .rowOne > div > p {

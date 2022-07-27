@@ -1,7 +1,7 @@
 # Chic-fil-A home page replica
-Javascript/Css
+Live Preview : https://ecurry15.github.io/js-restaurant-page/dist/index.html
 
-live Preview : file:///home/edward/Projects/Resturant%20Page/js-restaurant-page/dist/index.html
+Javascript/Html/Css
 
 This page was created to practice npm/webpack and creating webpages with javascript Dom manipulation only.
 

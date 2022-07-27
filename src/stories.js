@@ -1,5 +1,4 @@
-export function stories () {
-  const contentDiv = document.querySelector('#content');
-
-  contentDiv.replaceChildren();
+export function storiesPage () {
+  const contentDivTwo = document.querySelector('#content');
+  contentDivTwo.replaceChildren('');
 }

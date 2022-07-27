@@ -1,91 +1,44 @@
 export function initial() {
-const content = document.getElementById('content');
+const content = document.querySelector('#content');
+content.replaceChildren('');
 //Top Nav ----
-const topNav = document.createElement('div');
-topNav.className = "topNav";
-content.appendChild(topNav);
+const topNav = document.querySelector('.topNav');
 
 //Nav HamBurger Icon --- Smaller Screens ---//
-const hamburgerIcon = document.createElement('i');
-hamburgerIcon.className = "fa-solid fa-bars";
-topNav.appendChild(hamburgerIcon);
 //----------//
 
 //Logo ----
-const logoImg = document.createElement('img');
-logoImg.className = "logoImg";
-logoImg.src = "https://logos-world.net/wp-content/uploads/2021/08/Chick-fil-A-Logo.png";
-topNav.appendChild(logoImg);
+const logoImg = document.getElementsByClassName('.logoImg');
 
 //Location ---
-const locationWrapper = document.createElement('div');
-locationWrapper.className = 'locationWrapper';
-topNav.appendChild(locationWrapper);
+
 //Location Icon ---
-const locationIcon = document.createElement('i');
-locationIcon.className = 'fa-solid fa-location-dot';
-locationWrapper.appendChild(locationIcon);
+const locationIcon = document.querySelector('.fa-location-dot');
 //Location text ----
-const locationText = document.createElement('p');
-locationText.className = 'locationText';
-locationText.textContent = "Find a restaurant";
-locationWrapper.appendChild(locationText);
+const locationText = document.querySelector('.Find a restaurant');
 //Location End---
 
 //Main Nav Elements ---
-const mainNav = document.createElement('nav');
-mainNav.className = 'mainNav';
-topNav.appendChild(mainNav);
+const mainNav = document.querySelector('.mainNav');
 
 //Elements ---
-const menu = document.createElement('li');
-menu.textContent = "Menu";
-menu.id = "menu";
+const menu = document.getElementById('menu');
 
-const stories = document.createElement('li');
-stories.textContent = "Stories";
-stories.id = "stories";
-const about = document.createElement('li');
-about.textContent = "About";
-const careers = document.createElement('li');
-careers.textContent = "Careers";
-mainNav.append(menu, stories, about, careers);
+const stories = document.getElementById('stories');
 
 //Sign in ---
-const signInWrapper = document.createElement('div');
-signInWrapper.className = "signInWrapper";
-topNav.appendChild(signInWrapper);
+const signInWrapper = document.querySelector('.signInWrapper');
+
 // chick-One ---
-const chickOne = document.createElement('h3');
-chickOne.textContent = "Chick-fil-A One";
-signInWrapper.appendChild(chickOne);
 //Sign in text --
-const span1 = document.createElement('span');
-span1.textContent = "( ";
-signInWrapper.appendChild(span1);
-const signIn = document.createElement('p');
-signIn.textContent = "Sign In";
-signInWrapper.appendChild(signIn);
-const span2 = document.createElement('span');
-span2.textContent = " )";
-signInWrapper.appendChild(span2);
 //Sign in End---
 
 //Order --
-const orderFood = document.createElement('button');
-orderFood.textContent = "Order food";
-topNav.appendChild(orderFood);
 //Search --
-const searchIcon = document.createElement('i');
-searchIcon.className = 'fa-solid fa-magnifying-glass';
-topNav.appendChild(searchIcon);
-
 //Order Now --- Smaller Screen -- //
-const orderNow = document.createElement('p');
-orderNow.className = "orderNow";
+const orderNow = document.querySelector('.orderNow');
 let newline = "\r\n";
 orderNow.textContent = `Order ${newline} Now`;
-topNav.appendChild(orderNow);
 
 //Top Nav End----
 
